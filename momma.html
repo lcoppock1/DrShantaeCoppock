@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shantae' Coppock, Ph.D. | Public Policy & Criminal Justice Expert</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles to integrate the font */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+        }
+        h1, h2, h3, .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Simple fade-in animation for sections */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-slate-800 font-display">
+                <a href="#hero">Dr. Shantae' Coppock</a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="text-slate-600 hover:text-sky-700 transition duration-300">About</a>
+                <a href="#experience" class="text-slate-600 hover:text-sky-700 transition duration-300">Experience</a>
+                <a href="#education" class="text-slate-600 hover:text-sky-700 transition duration-300">Education</a>
+                <a href="#skills" class="text-slate-600 hover:text-sky-700 transition duration-300">Skills</a>
+                <a href="#contact" class="bg-sky-700 text-white px-4 py-2 rounded-md hover:bg-sky-800 transition duration-300">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-slate-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+         <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2">
+            <a href="#about" class="block px-6 py-2 text-sm text-slate-600 hover:bg-slate-100">About</a>
+            <a href="#experience" class="block px-6 py-2 text-sm text-slate-600 hover:bg-slate-100">Experience</a>
+            <a href="#education" class="block px-6 py-2 text-sm text-slate-600 hover:bg-slate-100">Education</a>
+            <a href="#skills" class="block px-6 py-2 text-sm text-slate-600 hover:bg-slate-100">Skills</a>
+            <a href="#contact" class="block px-6 py-2 text-sm text-slate-600 hover:bg-slate-100">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="bg-slate-100 py-20">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                        <img src="https://placehold.co/300x300/a3a3a3/FFFFFF?text=Dr.+Coppock" alt="Professional portrait of Dr. Shantae' Coppock" class="rounded-full shadow-2xl w-48 h-48 md:w-64 md:h-64 object-cover">
+                    </div>
+                    <div class="md:w-2/3 md:pl-12 text-center md:text-left">
+                        <h1 class="text-5xl md:text-7xl font-bold text-slate-800 mb-4">Shantae' Coppock, Ph.D.</h1>
+                        <p class="text-xl md:text-2xl text-sky-700 font-semibold mb-6">Expert in Public Policy, Criminal Justice, and Law Enforcement Leadership</p>
+                        <p class="text-lg text-slate-600 max-w-2xl mx-auto md:mx-0">
+                            A decorated law enforcement professional and accomplished academic dedicated to improving public safety, promoting social equity, and shaping the next generation of criminal justice leaders.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12 text-slate-800">About Me</h2>
+                <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                    <p class="text-lg mb-4">
+                        As a recent graduate of Walden University, I am an expert in Public Policy and Administration with a specialization in Criminal Justice. Additionally, I am grounded in other knowledge like Philosophy, Human Services, Business Administration, and Humanities.
+                    </p>
+                     <p class="text-lg mb-4">
+                        With over 8 years of experience managing supervisors, officers, and students, I have demonstrated strong leadership across court operations and higher education. My work involves influencing positive behavioral change, such as instituting an organizational wellness unit, and fostering collaboration between judicial stakeholders and law enforcement agencies to achieve shared goals.
+                    </p>
+                     <p class="text-lg">
+                        Combined with extensive research and publication, I have the experience of working in the industry as a supervisor and training officer in law enforcement working within the City and County of Philadelphia jurisdictions. I am passionate about applying ethics with evidence-based research to develop solutions for complex problems in public safety.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section with Tabs -->
+        <section id="experience" class="py-20 bg-slate-100 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12 text-slate-800">Professional Experience</h2>
+                <div class="max-w-4xl mx-auto">
+                    <!-- Tab Buttons -->
+                    <div class="flex flex-col sm:flex-row justify-center border-b border-slate-300 mb-8">
+                        <button id="tab-law-btn" class="px-6 py-3 text-lg font-semibold border-b-4 border-sky-700 text-sky-700 w-full sm:w-auto text-center">Law Enforcement</button>
+                        <button id="tab-acad-btn" class="px-6 py-3 text-lg font-semibold text-slate-500 border-b-4 border-transparent hover:border-slate-300 w-full sm:w-auto text-center">Academia & Counseling</button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div id="tab-content">
+                        <!-- Law Enforcement Panel -->
+                        <div id="tab-law-panel">
+                            <div class="bg-white p-6 rounded-lg shadow-lg">
+                                <div class="flex flex-col sm:flex-row justify-between items-start">
+                                    <div>
+                                        <h3 class="text-2xl font-bold text-sky-800">Deputy Sheriff / Building Commander</h3>
+                                        <p class="text-md font-semibold text-slate-600">Philadelphia Sheriff's Office, Philadelphia, PA</p>
+                                    </div>
+                                    <div class="flex items-center mt-2 sm:mt-0">
+                                        <span class="text-sm font-medium text-slate-500 whitespace-nowrap mr-3">2006 - Present</span>
+                                        <span class="bg-sky-600 text-white text-xs font-bold px-3 py-1 rounded-full">CURRENT</span>
+                                    </div>
+                                </div>
+                                <div class="mt-4 pt-4 border-t border-slate-200">
+                                    <h4 class="font-semibold text-slate-700">Career Progression:</h4>
+                                    <p class="text-sm text-slate-600 mt-1">
+                                        <span class="font-bold">Deputy Sheriff Captain:</span> 6/2023 - Current <br>
+                                        <span class="font-bold">Deputy Sheriff Lieutenant:</span> 11/2019 - 6/2023 <br>
+                                        <span class="font-bold">SOG Deputy Sheriff Sergeant:</span> 12/2015 - 11/2019 <br>
+                                        <span class="font-bold">Deputy Sheriff Officer, Warrant Unit:</span> 4/2014 - 6/2015 <br>
+                                        <span class="font-bold">Deputy Sheriff Officer, Training Officer:</span> 3/2006 - 4/2014 <br>
+                                        <span class="font-bold">Deputy Sheriff Officer, Recruiter:</span> 10/2006 - 1/2007
+                                    </p>
+                                </div>
+                                <ul class="list-disc list-inside mt-4 space-y-2 text-slate-600">
+                                    <li>Managed and led over 19 law enforcement supervisors and more than 100 officers.</li>
+                                    <li>Collaborated with judicial stakeholders for Municipal, Common Pleas, Domestic Violence, and Juvenile Courts.</li>
+                                    <li>Authored over 20 post orders for 5 Philadelphia Sheriff's Office court facilities.</li>
+                                    <li>Instituted an organizational wellness unit for sworn personnel, with a peer support team.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Academia & Counseling Panel -->
+                        <div id="tab-acad-panel" class="hidden space-y-8">
+                            <div class="bg-white p-6 rounded-lg shadow-lg">
+                                <div class="flex flex-col sm:flex-row justify-between items-start">
+                                    <div>
+                                        <h3 class="text-2xl font-bold text-sky-800">Adjunct Professor</h3>
+                                        <p class="text-md font-semibold text-slate-600">Seton Hall University, South Orange, NJ</p>
+                                    </div>
+                                    <div class="flex items-center mt-2 sm:mt-0">
+                                        <span class="text-sm font-medium text-slate-500 whitespace-nowrap mr-3">Aug 2024 - Present</span>
+                                        <span class="bg-sky-600 text-white text-xs font-bold px-3 py-1 rounded-full">CURRENT</span>
+                                    </div>
+                                </div>
+                                <p class="mt-4 text-slate-600">Teach in the Master of Arts program for Law Enforcement Executive Leadership, lecturing on ethics in policing using the Canvas online platform.</p>
+                            </div>
+                             <div class="bg-white p-6 rounded-lg shadow-lg">
+                                <div class="flex flex-col sm:flex-row justify-between items-start">
+                                    <div>
+                                        <h3 class="text-2xl font-bold text-sky-800">Addiction Counselor (PRN)</h3>
+                                        <p class="text-md font-semibold text-slate-600">Keystone Center, Chester, PA</p>
+                                    </div>
+                                     <div class="flex items-center mt-2 sm:mt-0">
+                                        <span class="text-sm font-medium text-slate-500 whitespace-nowrap mr-3">Sep 2022 - Present</span>
+                                        <span class="bg-sky-600 text-white text-xs font-bold px-3 py-1 rounded-full">CURRENT</span>
+                                    </div>
+                                </div>
+                                <p class="mt-4 text-slate-600">Provide direct patient care, monitor and deliver high-quality services to dually diagnosed/chemically dependent patients, and facilitate individual and group educational services.</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-lg">
+                                <div class="flex flex-col sm:flex-row justify-between items-start">
+                                    <div>
+                                        <h3 class="text-2xl font-bold text-sky-800">Professor / Instructor / Thesis Advisor</h3>
+                                        <p class="text-md font-semibold text-slate-600">Accord University, Mogadishu, Somalia</p>
+                                    </div>
+                                    <span class="text-sm font-medium text-slate-500 mt-2 sm:mt-0 whitespace-nowrap">Feb 2022 - Feb 2023</span>
+                                </div>
+                                <p class="mt-4 text-slate-600">Served as an online faculty member for the Faculty of Humanities & Social Science. Lectured master's and undergraduate classes across various disciplines and mentored 51 students with their thesis projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-20 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12 text-slate-800">Education</h2>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-sky-800">Ph.D. in Public Policy and Administration</h3>
+                        <p class="font-semibold">Specialization: Criminal Justice</p>
+                        <p class="text-slate-600">Walden University, 2020</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-sky-800">M.S. in Philosophy</h3>
+                        <p class="font-semibold">Minor: Public Policy and Administration</p>
+                        <p class="text-slate-600">Walden University, 2020</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-sky-800">M.S. in Human Services</h3>
+                         <p class="font-semibold">Minor: Business Administration</p>
+                        <p class="text-slate-600">Lincoln University, 2012</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-sky-800">B.S. in Humanities and Social Sciences</h3>
+                        <p class="font-semibold">Minor: Human Services</p>
+                        <p class="text-slate-600">Lincoln University, 2010</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research & Publications Section -->
+        <section id="research" class="py-20 bg-slate-100 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12 text-slate-800">Research & Publications</h2>
+                <div class="max-w-4xl mx-auto space-y-6">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-sky-800">Doctoral Dissertation (Published)</h3>
+                        <p class="italic mt-2">"African American Law Enforcers' Perceptions about Crime in Minority Communities"</p>
+                        <p class="mt-1 text-slate-600">ProQuest Dissertations Publishing, 2020, 28261294, pp. 1-161.</p>
+                    </div>
+                     <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-sky-800">Graduate Research</h3>
+                        <p class="italic mt-2">"Workplace Violence in a Philadelphia County Agency"</p>
+                        <p class="mt-1 text-slate-600">Lincoln University, 2009.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Recognition Section -->
+        <section id="skills" class="py-20 fade-in-section">
+             <div class="container mx-auto px-6">
+                <!-- Skills & Technical Expertise Band -->
+                <div class="max-w-5xl mx-auto mb-16">
+                     <h3 class="text-3xl font-bold text-center mb-12 text-slate-700 font-display">Skills & Technical Expertise</h3>
+                     <div class="grid md:grid-cols-3 gap-8 text-center">
+                        <!-- Item 1 -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform">
+                             <div class="mx-auto bg-sky-100 rounded-full h-16 w-16 flex items-center justify-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-sky-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                             </div>
+                             <h4 class="text-xl font-bold text-sky-800">Research & Documentation</h4>
+                             <p class="mt-2 text-slate-600">Experience in both qualitative and quantitative research, with a peer-reviewed article published in ProQuest.</p>
+                        </div>
+                         <!-- Item 2 -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform">
+                             <div class="mx-auto bg-sky-100 rounded-full h-16 w-16 flex items-center justify-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-sky-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" /></svg>
+                             </div>
+                             <h4 class="text-xl font-bold text-sky-800">Technical Skills</h4>
+                             <p class="mt-2 text-slate-600">Proficient in data analysis and documentation software including MAXQDA, SPSS, Microsoft Suite, and Outlook.</p>
+                        </div>
+                         <!-- Item 3 -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform">
+                             <div class="mx-auto bg-sky-100 rounded-full h-16 w-16 flex items-center justify-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-sky-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+                             </div>
+                             <h4 class="text-xl font-bold text-sky-800">Leadership Methodologies</h4>
+                             <p class="mt-2 text-slate-600">Skilled at correlating leadership concepts and theories to promote stakeholder and personnel participation.</p>
+                        </div>
+                     </div>
+                </div>
+                
+                <!-- Recognition & Engagement Band -->
+                <div class="max-w-5xl mx-auto pt-16 border-t">
+                     <h3 class="text-3xl font-bold text-center mb-12 text-slate-700 font-display">Recognition & Engagement</h3>
+                     <div class="grid md:grid-cols-2 gap-x-12 gap-y-8">
+                         <!-- Left Column: Affiliations -->
+                         <div>
+                             <h4 class="text-2xl font-bold text-sky-800 mb-4">Professional Affiliations</h4>
+                             <ul class="space-y-3 text-slate-600">
+                                 <li class="flex items-start"><span class="text-sky-700 mr-2">&#10003;</span> Fraternal Order of Police & NABLEO</li>
+                                 <li class="flex items-start"><span class="text-sky-700 mr-2">&#10003;</span> Guardian Civic League</li>
+                                 <li class="flex items-start"><span class="text-sky-700 mr-2">&#10003;</span> Deputy Sheriff's Association</li>
+                                 <li class="flex items-start"><span class="text-sky-700 mr-2">&#10003;</span> Criminal Justice Educators Association</li>
+                             </ul>
+                         </div>
+                         <!-- Right Column: Awards & Interests -->
+                         <div>
+                             <h4 class="text-2xl font-bold text-sky-800 mb-4">Awards & Interests</h4>
+                             <ul class="space-y-3 text-slate-600">
+                                 <li class="flex items-start"><span class="text-amber-500 mr-2">&#9733;</span> <span class="font-semibold">Award for Bravery (2019):</span> Recognized by the Philadelphia Sheriff's Office.</li>
+                                 <li class="flex items-start"><span class="text-amber-500 mr-2">&#9733;</span> <span class="font-semibold">Black History Month Award (2025):</span> From The Saint Elizabeth University Police Studies Institute.</li>
+                                 <li class="flex items-start"><span class="text-sky-700 mr-2">&#10003;</span> <span class="font-semibold">Core Interest:</span> Engaging the community and motivating others to achieve their goals.</li>
+                             </ul>
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <footer id="contact" class="bg-slate-800 text-white py-12 fade-in-section">
+            <div class="container mx-auto px-6 text-center">
+                 <h2 class="text-3xl font-bold mb-6 font-display">Get In Touch</h2>
+                 <p class="text-slate-300 mb-8 max-w-lg mx-auto">I am always open to discussing new opportunities, collaborations, or speaking engagements.</p>
+                 <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                     <div class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <a href="mailto:Shantaehc1@gmail.com" class="hover:text-sky-300 transition-colors">Shantaehc1@gmail.com</a>
+                     </div>
+                      <div class="flex items-center space-x-2">
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                         </svg>
+                         <span>(267) 241-1161</span>
+                      </div>
+                     <div class="flex items-center space-x-2">
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-400" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                         </svg>
+                         <a href="https://www.linkedin.com/in/shantae-coppock" target="_blank" rel="noopener noreferrer" class="hover:text-sky-300 transition-colors">LinkedIn Profile</a>
+                     </div>
+                 </div>
+                 <div class="mt-10 border-t border-slate-700 pt-6">
+                     <p class="text-sm text-slate-400">&copy; 2024 Shantae' Coppock, Ph.D. All Rights Reserved.</p>
+                 </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // --- Mobile menu toggle ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                 mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // --- Fade-in animations on scroll ---
+        const sections = document.querySelectorAll('.fade-in-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        sections.forEach(section => observer.observe(section));
+
+        // --- Tabbed Interface for Experience Section ---
+        const tabLawBtn = document.getElementById('tab-law-btn');
+        const tabAcadBtn = document.getElementById('tab-acad-btn');
+        const tabLawPanel = document.getElementById('tab-law-panel');
+        const tabAcadPanel = document.getElementById('tab-acad-panel');
+
+        function showLawTab() {
+            tabLawBtn.classList.add('border-sky-700', 'text-sky-700');
+            tabLawBtn.classList.remove('text-slate-500', 'border-transparent');
+            tabAcadBtn.classList.add('text-slate-500', 'border-transparent');
+            tabAcadBtn.classList.remove('border-sky-700', 'text-sky-700');
+            tabLawPanel.classList.remove('hidden');
+            tabAcadPanel.classList.add('hidden');
+        }
+
+        function showAcadTab() {
+            tabAcadBtn.classList.add('border-sky-700', 'text-sky-700');
+            tabAcadBtn.classList.remove('text-slate-500', 'border-transparent');
+            tabLawBtn.classList.add('text-slate-500', 'border-transparent');
+            tabLawBtn.classList.remove('border-sky-700', 'text-sky-700');
+            tabAcadPanel.classList.remove('hidden');
+            tabLawPanel.classList.add('hidden');
+        }
+
+        tabLawBtn.addEventListener('click', showLawTab);
+        tabAcadBtn.addEventListener('click', showAcadTab);
+    </script>
+</body>
+</html>
